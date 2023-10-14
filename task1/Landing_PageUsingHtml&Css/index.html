@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>landing page website design using html & css</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    font-family: 'poppins',sans-serif;
+    position: absolute;
+    /* position absolute se scroll bar khatam */
+    top: 0;
+}
+.menu a{
+    text-decoration: none;
+    /* underline remove */
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 0px 5px;   
+    
+}
+.menu a:last-child{
+    background: #e74c3c;
+    border-radius: 5px;
+}
+.menu a:hover {
+  background-color: #e74c3c;
+  border-radius: 50px; 
+  transition: 1s linear;
+}
+.line{
+    position:absolute;
+    top:22%;
+    left:8%;
+}
+.box1{
+    width: 10px; height: 10px; background:white;
+}
+.box2{
+    width: 60px; height: 2px; background:white;
+}
+.box3{
+    width: 100px; height: 2px; background:white; 
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+.left{
+    flex-basis: 40%;
+}
+.right{
+    flex-basis: 50%;
+}
+.right img{
+   width: 100%;
+   -webkit-box-reflect:below 1px linear-gradient(transparent,transparent,#0004);
+}
+.left h1{
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    /* line height se line ke bich me gap kam kar sakte hai */
+}
+.left button{
+    background: #e74c3c;
+    color: white;
+    padding:10px 20px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.s-icon{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+.s-icon img{
+    width: 100px;
+}
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logow.png" width="200">
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">features</a>
+                <a href="#">Booking</a>
+                <a href="#">Login</a>
+            </div>
+        </nav>
+        <div class="line">
+            <div class="box1"></div><br>
+            <div class="box2"></div><br>
+            <div class="box3"></div>
+        </div>
+        <div class="container">
+            <div class="left">
+                <h1 class="animate__animated animate__bounce ">Future<br>On Your Hand</h1>
+                <button>Order Now</button>
+            </div>
+            <div class="right">
+                <img src="wat3.png" class="animate__animated animate__lightSpeedInLeft">
+
+            </div>
+        </div>
+        <div class="s-icon">
+            <img src="icon1.png">
+            <img src="icon2.png">
+            <img src="icon3.png">
+            <img src="icon4.png">
+        </div>
+    </header>
+
+</body>
+
+</html>
